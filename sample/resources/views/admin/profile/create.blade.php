@@ -17,6 +17,7 @@
                             @foreach($errors->all() as $e)
                                 <li>{{ $e }}</li>
                             @endforeach
+                        </ul>
                     @endif            
                     <div class="form-group row">
                         <label class="col-md-2">氏名</label>
