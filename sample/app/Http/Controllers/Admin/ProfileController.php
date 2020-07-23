@@ -8,7 +8,6 @@ use App\Profiles;
 
 class ProfileController extends Controller
 {
-    //
     public function add()
     {
         return view('admin.profile.create');
@@ -24,7 +23,7 @@ class ProfileController extends Controller
 
         $profiles->fill($parameter);
         $profiles->save();
-        
+
         return redirect('admin/profile/create');
     }
 
